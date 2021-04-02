@@ -1,0 +1,35 @@
+.details {
+  width: 100%;
+  border: 3px dashed #14a7f3;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+}
+
+h1 {
+  color: #14aff3;
+  font-size: 24px;
+}
+
+p {
+  text-align: justify;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: #14a7f3;
+}
+
+ul {
+  margin-left: 5px;
+}
+
+.latest {
+  font-size: 14px;
+  color: #14a7f3;
+  margin-top: 5px;
+
+  /* margin-left: 4px; */
+  /* border: 1px solid #f0f0f0; */
+}

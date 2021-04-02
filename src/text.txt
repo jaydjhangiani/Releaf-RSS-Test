@@ -1,0 +1,46 @@
+  const [rssFeed, setRssFeed] = useState([])
+
+  const rss = { rss : "https://freshoffthefield.wixsite.com/fotf/blog-feed.xml" }
+
+  useEffect(() => {
+    axios.post('http://localhost:5000/api/rss/', rss )
+    .then(res =>  setRssFeed(res.data))
+    .catch(err => console.log(err))
+  },[])
+
+  {
+          rssFeed.map((item,index) => 
+            //<img src={item.enclosure.url} alt={item.title} key={index}/>
+            // {console.log(item.["content:encoded"])}
+            {}
+          )
+        }
+
+
+
+Array(4)
+0:
+content: "if you're facing issues(eg Couldn't play media file) you can find the SoundCloud link here : ↵https://soundcloud.com/fresh-off-the-field/the-ipl-podcast?ref=clipboard↵↵↵The IPL is back and so are we! The wait for the IPL has been long and arduous but it's finally here so tune in to the Fresh off The Field Podcast as we discuss the squads and predict who we think will be the winners and losers in the 13th Edition of the Dream11 IPL and pick 4 key foreign players that could make an impact for each team."
+contentSnippet: "if you're facing issues(eg Couldn't play media file) you can find the SoundCloud link here : ↵https://soundcloud.com/fresh-off-the-field/the-ipl-podcast?ref=clipboard↵↵↵The IPL is back and so are we! The wait for the IPL has been long and arduous but it's finally here so tune in to the Fresh off The Field Podcast as we discuss the squads and predict who we think will be the winners and losers in the 13th Edition of the Dream11 IPL and pick 4 key foreign players that could make an impact for each team."
+enclosure: {type: "audio/mpeg", url: "https://feeds.soundcloud.com/stream/894822445-fresh-off-the-field-the-ipl-podcast.mp3", length: "40675458"}
+guid: "tag:soundcloud,2010:tracks/894822445"
+isoDate: "2020-09-17T15:12:17.000Z"
+itunes: {author: "Fresh Off The Field", subtitle: "if you're facing issues(eg Couldn't play media fi…", summary: "if you're facing issues(eg Couldn't play media fil… players that could make an impact for each team.", explicit: "no", duration: "00:16:55", …}
+link: "https://soundcloud.com/fresh-off-the-field/the-ipl-podcast"
+pubDate: "Thu, 17 Sep 2020 15:12:17 +0000"
+title: "The IPL Podcast"
+__proto__: Object
+1:
+content: "We give our views on the entire Hamilton controversy, provide insight to the driver transfers and discuss the season start dates.↵↵Want us to discuss more topics?↵Write to us at : info.freshoffthefield@gmail.com↵↵If you liked this podcast share it on social media or tag any one of our hosts on IG."
+contentSnippet: "We give our views on the entire Hamilton controversy, provide insight to the driver transfers and discuss the season start dates.↵↵Want us to discuss more topics?↵Write to us at : info.freshoffthefield@gmail.com↵↵If you liked this podcast share it on social media or tag any one of our hosts on IG."
+enclosure: {type: "audio/mpeg", url: "https://feeds.soundcloud.com/stream/839361268-fresh-off-the-field-f1-silly-season-and-hamilton.mp3", length: "35119736"}
+guid: "tag:soundcloud,2010:tracks/839361268"
+isoDate: "2020-06-13T07:05:11.000Z"
+itunes: {author: "Fresh Off The Field", subtitle: "We give our views on the entire Hamilton controve…", summary: "We give our views on the entire Hamilton controver…n social media or tag any one of our hosts on IG.", explicit: "no", duration: "00:14:37", …}
+link: "https://soundcloud.com/fresh-off-the-field/f1-silly-season-and-hamilton"
+pubDate: "Sat, 13 Jun 2020 07:05:11 +0000"
+title: "F1: Silly Season and Hamilton"
+__proto__: Object
+2: {title: "Cricket: The Guidelines and Moving on from Covid", link: "https://soundcloud.com/fresh-off-the-field/cricket-the-guidelines-and-movine-on-from-covid", pubDate: "Wed, 10 Jun 2020 07:07:39 +0000", enclosure: {…}, content: "We give you an overview of the new guidelines set …n social media or tag any one of our hosts on IG.", …}
+3: {title: "The Impact Of COVID-19 On Sport", link: "https://soundcloud.com/fresh-off-the-field/the-impact-of-covid-19-on-sport", pubDate: "Thu, 09 Apr 2020 12:32:16 +0000", enclosure: {…}, content: "We discuss how the pandemic has been a dampener on…↵Write to us at : info.freshoffthefield@gmail.com", …}
+length: 4
